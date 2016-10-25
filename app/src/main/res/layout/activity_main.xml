@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="qf.com.news.mvpview.activity.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/sliding_sliding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/main_rela2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <RadioGroup
+                    android:id="@+id/main_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="2dp">
+
+                    <RadioButton
+                        android:id="@+id/main_home"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableTop="@drawable/home"
+                        android:gravity="center"
+                        android:text="@string/home"
+                        android:textColor="@color/radio_selector" />
+
+                    <RadioButton
+                        android:id="@+id/main_hot"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/hot"
+                        android:gravity="center"
+                        android:text="@string/hot"
+                        android:textColor="@color/radio_selector" />
+
+                    <RadioButton
+                        android:id="@+id/main_funny"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+
+                        android:drawableTop="@drawable/funny"
+                        android:gravity="center"
+                        android:text="@string/funny"
+                        android:textColor="@color/radio_selector" />
+
+                    <RadioButton
+                        android:id="@+id/main_me"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/me"
+                        android:gravity="center"
+                        android:text="@string/me"
+                        android:textColor="@color/radio_selector" />
+                </RadioGroup>
+                <View
+                    android:id="@+id/main_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_above="@+id/main_rg"
+                    android:background="#878282" />
+                <FrameLayout
+                    android:id="@+id/main_contain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/main_line"></FrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="#fff"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|start"
+            android:orientation="vertical">
+            <include layout="@layout/slide_item"/>
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
+

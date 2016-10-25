@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="qf.com.news.mvpview.fragment.BaseFragment">
+    <RelativeLayout
+        android:id="@+id/main_rela1"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+        <RadioGroup
+            android:id="@+id/main_top_rg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/base_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:button="@null"
+                android:checked="true"
+                android:text="科技新闻"
+                android:textColor="@color/top_selector"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/base_happy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/main_news"
+                android:button="@null"
+                android:text="开心一下"
+                android:textColor="@color/top_selector"
+                android:textSize="20sp" />
+        </RadioGroup>
+        <View
+            android:id="@+id/main_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/main_top_rg"
+            android:background="#878282" />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/base_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        app:tabIndicatorColor="#FC5832"
+        app:tabSelectedTextColor="#FC5832"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"
+        app:tabTextColor="#BFB9B9" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/base_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

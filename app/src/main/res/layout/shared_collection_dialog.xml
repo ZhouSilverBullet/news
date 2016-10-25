@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="登录/注册后才能收藏糗事哦"
+    android:textSize="20dp"
+    android:layout_gravity="center_horizontal"
+    android:textColor="#131313"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#cfcfcf"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="一键登录/注册"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#cfcfcf"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_security_qq"
+            android:text="QQ"
+            android:textColor="#181818"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_security_wx"
+            android:text="微信"
+            android:textColor="#181818"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_security_weibo"
+            android:text="微博"
+            android:textColor="#181818"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/source_qiushi"
+            android:text="糗事百科"
+            android:textColor="#181818"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>

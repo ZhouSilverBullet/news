@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/user_icon"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff0">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:src="@mipmap/ic_launcher" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/user_icon"
+        android:id="@+id/user_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingTop="20dp"
+        android:text="你的消息"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/user_message"
+        android:id="@+id/user_house"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingTop="20dp"
+        android:text="积分商城"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/user_house"
+        android:id="@+id/user_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingTop="20dp"
+        android:text="会员中心"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/user_vip"
+        android:id="@+id/user_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingTop="20dp"
+        android:text="主题换肤"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设置"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="退出应用"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

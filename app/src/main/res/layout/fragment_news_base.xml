@@ -1,0 +1,21 @@
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="qf.com.news.mvpview.fragment.NewsBaseFragment">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/base_recycler_view"
+            android:layout_height="match_parent"
+            app:layoutManager="LinearLayoutManager"
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:id="@+id/base_progressbar"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Large"/>
+    </FrameLayout>
